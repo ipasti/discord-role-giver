@@ -21,7 +21,7 @@ module.exports = {
         const minecraftE = '814068851842875436';
         const warzoneE = '814068852107116554';
         const etsE = '814072779406180352';
-        const valorantE = '813769935967748096';
+        const valorantE = '814068851922042941';
         const rainbow6E = '814068851448872971';
         const swbattlefront2E = '814072778185375754';
  
@@ -48,7 +48,7 @@ module.exports = {
         messageEmbed.react(etsE);
         messageEmbed.react(valorantE);
         messageEmbed.react(rainbow6E);
-        messageEmbed.react(swbattlefront2);
+        messageEmbed.react(swbattlefront2E);
  
         client.on('messageReactionAdd', async (reaction, user) => {
             if (reaction.message.partial) await reaction.message.fetch();
