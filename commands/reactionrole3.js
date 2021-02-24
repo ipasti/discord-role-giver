@@ -31,13 +31,13 @@ module.exports = {
             if (!reaction.message.guild) return;
  
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === pcEmoji) {
+                if (reaction.emoji.name === `<:pc:${pcEmoji}`) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(pc);
                 }
-                if (reaction.emoji.name === xboxEmoji) {
+                if (reaction.emoji.name === `<:xbox:${xboxEmoji}>`) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(xbox);
                 }
-                if (reaction.emoji.name === psEmoji) {
+                if (reaction.emoji.name === `<:ps:${psEmoji}>`) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(ps);
                 }
             } else {
