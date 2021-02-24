@@ -12,9 +12,9 @@ module.exports = {
         const psEmoji = '814022505995042826';
         const xboxEmoji = '814022506208952350';
 
-        const pcN = ':pc:814022506410541106';
-        const psN = ':ps:814022505995042826';
-        const xboxN = ':xbox:814022506208952350';
+        const pcN = '<:pc:814022506410541106>';
+        const psN = '<:ps:814022505995042826>';
+        const xboxN = '<:xbox:814022506208952350>';
  
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
