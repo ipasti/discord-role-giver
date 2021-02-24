@@ -11,6 +11,10 @@ module.exports = {
         const pcEmoji = '814022506410541106';
         const psEmoji = '814022505995042826';
         const xboxEmoji = '814022506208952350';
+
+        const pcN = 'pc';
+        const psN = 'ps';
+        const xboxN = 'xbox';
  
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
@@ -31,13 +35,13 @@ module.exports = {
             if (!reaction.message.guild) return;
  
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.id === pcEmoji) {
+                if (reaction.emoji.name === pcN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(pc);
                 }
-                if (reaction.emoji.id === xboxEmoji) {
+                if (reaction.emoji.name === xboxN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(xbox);
                 }
-                if (reaction.emoji.id === psEmoji) {
+                if (reaction.emoji.name === psN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(ps);
                 }
             } else {
@@ -55,13 +59,13 @@ module.exports = {
  
  
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.id === pcEmoji) {
+                if (reaction.emoji.name === pcN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(pc);
                 }
-                if (reaction.emoji.id === xboxEmoji) {
+                if (reaction.emoji.name === xboxN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(xbox);
                 }
-                if (reaction.emoji.id === psEmoji) {
+                if (reaction.emoji.name === psN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(ps);
                 }
             } else {
