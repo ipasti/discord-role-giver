@@ -15,9 +15,9 @@ module.exports = {
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
             .setTitle('На каком устройстве ты играешь?')
-            .setDescription(`<:${pcEmoji}:> - я ПК боярин\n`
-                + `<:${xboxEmoji}:> - люблю всё зелёное, а так же консоль xBox\n`
-                + `<:${psEmoji}:> - зачем ваш компьютер, когда у меня есть Play Station`)
+            .setDescription(`<:pc:${pcEmoji}> - я ПК боярин\n`
+                + `<:xbox:${xboxEmoji}> - люблю всё зелёное, а так же консоль xBox\n`
+                + `<:ps:${psEmoji}> - зачем ваш компьютер, когда у меня есть Play Station`)
  
         let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(pcEmoji);
