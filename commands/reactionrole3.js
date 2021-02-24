@@ -1,6 +1,6 @@
 module.exports = {
     //консоль/пк
-    name: 'reactionrole1',
+    name: 'reactionrole3',
     description: "Sets up a reaction role message!",
     async execute(message, args, Discord, client) {
         const channel = '813416099038756884';
@@ -15,9 +15,9 @@ module.exports = {
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
             .setTitle('На каком устройстве ты играешь?')
-            .setDescription(`${pcEmoji} - я ПК боярин\n`
-                + `${xboxEmoji} - люблю всё зелёное, а так же консоль xBox\n`
-                + `${psEmoji} - зачем ваш компьютер, когда у меня есть Play Station`)
+            .setDescription(`<:${pcEmoji}:> - я ПК боярин\n`
+                + `<:${xboxEmoji}:> - люблю всё зелёное, а так же консоль xBox\n`
+                + `<:${psEmoji}:> - зачем ваш компьютер, когда у меня есть Play Station`)
  
         let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(pcEmoji);
