@@ -25,15 +25,15 @@ module.exports = {
         const rainbow6E = '814068851448872971';
         const swbattlefront2E = '814072778185375754';
 
-        const gtaN = ':gtav:814069106633867274';
-        const csN = ':csgo:814068851952058388';
-        const apexN = ':apexlegends:814071642099286068';
-        const minecraftN = ':minecraft:814068851842875436';
-        const warzoneN = ':callofdutywarzone:814068852107116554';
-        const etsN = ':ets2:814072779406180352';
-        const valorantN = ':valorant:814068851922042941';
-        const rainbow6N = ':rainbow6:814068851448872971';
-        const swbattlefront2N = ':swbattlefront2:814072778185375754';
+        const gtaN = 'gtav';
+        const csN = 'csgo';
+        const apexN = 'apexlegends';
+        const minecraftN = 'minecraft';
+        const warzoneN = 'callofdutywarzone';
+        const etsN = 'ets2';
+        const valorantN = 'valorant';
+        const rainbow6N = 'rainbow6';
+        const swbattlefront2N = 'swbattlefront2';
         
  
         let embed = new Discord.MessageEmbed()
@@ -66,33 +66,32 @@ module.exports = {
             if (reaction.partial) await reaction.fetch();
             if (user.bot) return;
             if (!reaction.message.guild) return;
- 
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === gtaN) {
+                if (reaction.emoji.get('735955156021018644').name === gtaN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(gta);
                 }
-                if (reaction.emoji.name === csN) {
+                if (reaction.emoji.get('735955156021018644').name === csN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(cs);
                 }
-                if (reaction.emoji.name === apexN) {
+                if (reaction.emoji.get('735955156021018644').name === apexN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(apex);
                 }
-                if (reaction.emoji.name === minecraftN) {
+                if (reaction.emoji.get('735955156021018644').name === minecraftN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(minecraft);
                 }
-                if (reaction.emoji.name === warzoneN) {
+                if (reaction.emoji.get('735955156021018644').name === warzoneN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(warzone);
                 }
-                if (reaction.emoji.name === etsN) {
+                if (reaction.emoji.get('735955156021018644').name === etsN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(ets);
                 }
-                if (reaction.emoji.name === valorantN) {
+                if (reaction.emoji.get('735955156021018644').name === valorantN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(valorant);
                 }
-                if (reaction.emoji.name === rainbow6N) {
+                if (reaction.emoji.get('735955156021018644').name === rainbow6N) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(rainbow6);
                 }
-                if (reaction.emoji.name === swbattlefront2N) {
+                if (reaction.emoji.get('735955156021018644').name === swbattlefront2N) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(swbattlefront2);
                 }
             } else {
@@ -110,31 +109,31 @@ module.exports = {
  
  
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === gtaN) {
+                if (reaction.emoji.get('735955156021018644').name === gtaN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(gta);
                 }
-                if (reaction.emoji.name === csN) {
+                if (reaction.emoji.get('735955156021018644').name === csN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(cs);
                 }
-                if (reaction.emoji.name === apexN) {
+                if (reaction.emoji.get('735955156021018644').name === apexN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(apex);
                 }
-                if (reaction.emoji.name === minecraftN) {
+                if (reaction.emoji.get('735955156021018644').name === minecraftN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(minecraft);
                 }
-                if (reaction.emoji.name === warzoneN) {
+                if (reaction.emoji.get('735955156021018644').name === warzoneN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(warzone);
                 }
-                if (reaction.emoji.name === etsN) {
+                if (reaction.emoji.get('735955156021018644').name === etsN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(ets);
                 }
-                if (reaction.emoji.name === valorantN) {
+                if (reaction.emoji.get('735955156021018644').name === valorantN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(valorant);
                 }
-                if (reaction.emoji.name === rainbow6N) {
+                if (reaction.emoji.get('735955156021018644').name === rainbow6N) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(rainbow6);
                 }
-                if (reaction.emoji.name === swbattlefront2N) {
+                if (reaction.emoji.get('735955156021018644').name === swbattlefront2N) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(swbattlefront2);
                 }
             } else {

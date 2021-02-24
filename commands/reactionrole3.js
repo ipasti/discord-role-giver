@@ -12,9 +12,9 @@ module.exports = {
         const psEmoji = '814022505995042826';
         const xboxEmoji = '814022506208952350';
 
-        const pcN = '<:pc:814022506410541106>';
-        const psN = '<:ps:814022505995042826>';
-        const xboxN = '<:xbox:814022506208952350>';
+        const pcN = 'pc';
+        const psN = 'ps';
+        const xboxN = 'xbox';
  
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
@@ -35,13 +35,13 @@ module.exports = {
             if (!reaction.message.guild) return;
  
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === pcN) {
+                if (reaction.emoji.get('735955156021018644').name === pcN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(pc);
                 }
-                if (reaction.emoji.name === xboxN) {
+                if (reaction.emoji.get('735955156021018644').name === xboxN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(xbox);
                 }
-                if (reaction.emoji.name === psN) {
+                if (reaction.emoji.get('735955156021018644').name === psN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.add(ps);
                 }
             } else {
@@ -59,13 +59,13 @@ module.exports = {
  
  
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === pcN) {
+                if (reaction.emoji.get('735955156021018644').name === pcN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(pc);
                 }
-                if (reaction.emoji.name === xboxN) {
+                if (reaction.emoji.get('735955156021018644').name === xboxN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(xbox);
                 }
-                if (reaction.emoji.name === psN) {
+                if (reaction.emoji.get('735955156021018644').name === psN) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(ps);
                 }
             } else {
