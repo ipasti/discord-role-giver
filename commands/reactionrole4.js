@@ -25,15 +25,15 @@ module.exports = {
         const rainbow6E = '814068851448872971';
         const swbattlefront2E = '814072778185375754';
 
-        const gtaN = 'gtav';
-        const csN = 'csgo';
-        const apexN = 'apexlegends';
-        const minecraftN = 'minecraft';
-        const warzoneN = 'callofdutywarzone';
-        const etsN = 'ets2';
-        const valorantN = 'valorant';
-        const rainbow6N = 'rainbow6';
-        const swbattlefront2N = 'swbattlefront2';
+        const gtaN = ':gtav:814069106633867274';
+        const csN = ':csgo:814068851952058388';
+        const apexN = ':apexlegends:814071642099286068';
+        const minecraftN = ':minecraft:814068851842875436';
+        const warzoneN = ':callofdutywarzone:814068852107116554';
+        const etsN = ':ets2:814072779406180352';
+        const valorantN = ':valorant:814068851922042941';
+        const rainbow6N = ':rainbow6:814068851448872971';
+        const swbattlefront2N = ':swbattlefront2:814072778185375754';
         
  
         let embed = new Discord.MessageEmbed()
