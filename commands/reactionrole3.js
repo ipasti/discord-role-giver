@@ -55,13 +55,13 @@ module.exports = {
  
  
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === pcEmoji) {
+                if (reaction.emoji.id === pcEmoji) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(pc);
                 }
-                if (reaction.emoji.name === xboxEmoji) {
+                if (reaction.emoji.id === xboxEmoji) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(xbox);
                 }
-                if (reaction.emoji.name === psEmoji) {
+                if (reaction.emoji.id === psEmoji) {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(ps);
                 }
             } else {
