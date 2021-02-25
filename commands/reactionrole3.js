@@ -3,7 +3,7 @@ module.exports = {
     name: 'reactionrole3',
     description: "Sets up a reaction role message!",
     async execute(message, args, Discord, client) {
-        const channel = '813416099038756884';
+        const channel = '798913368203198488';
         const pc = message.guild.roles.cache.find(role => role.id === "798913368169513016");
         const xbox = message.guild.roles.cache.find(role => role.id === "798913368169513019");
         const ps = message.guild.roles.cache.find(role => role.id === "798913368177508362");
@@ -12,9 +12,9 @@ module.exports = {
         const psEmoji = '814022505995042826';
         const xboxEmoji = '814022506208952350';
 
-        const pcN = '<:pc:814022506410541106>';
-        const psN = '<:ps:814022505995042826>';
-        const xboxN = '<:xbox:814022506208952350>';
+        const pcN = '<pc>';
+        const psN = '<ps>';
+        const xboxN = '<xbox>';
  
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
