@@ -3,7 +3,7 @@ module.exports = {
     name: 'reactionrole4',
     description: "Sets up a reaction role message!",
     async execute(message, args, Discord, client) {
-        const channel = '798913368203198488';
+        const channel = '813416099038756884';
         const gta = message.guild.roles.cache.find(role => role.id === "813769952153567262");
         const cs = message.guild.roles.cache.find(role => role.id === "813769953806778368");
         const apex = message.guild.roles.cache.find(role => role.id === "813769949264609321");
