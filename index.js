@@ -72,54 +72,54 @@ const swbattlefront2E = "814072778185375754";
 
     if (reaction.message.channel.id == channel) {
         if (reaction.emoji.name === acceptEmoji) {
-            await reaction.message.id(message1).guild.members.cache.get(user.id).roles.add(accept);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(accept);
         } 
         if (reaction.emoji.id === pcEmoji) {
-            await reaction.message.id(message2).guild.members.cache.get(user.id).roles.add(pc);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(pc);
         }
         if (reaction.emoji.id === xboxEmoji) {
-            await reaction.message.id(message2).guild.members.cache.get(user.id).roles.add(xbox);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(xbox);
         }
         if (reaction.emoji.id === psEmoji) {
-            await reaction.message.id(message2).guild.members.cache.get(user.id).roles.add(ps);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(ps);
         }
     }            
     if (reaction.message.channel.id == channel1) {
         if (reaction.emoji.name === manEmoji) {
-            await reaction.message.id(message3).guild.members.cache.get(user.id).roles.add(man);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(man);
         }
         if (reaction.emoji.name === womanEmoji) {
-            await reaction.message.id(message3).guild.members.cache.get(user.id).roles.add(woman);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(woman);
         }
         if (reaction.emoji.id === gtaE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(gta);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(gta);
         }
         if (reaction.emoji.id === csE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(cs);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(cs);
         }
         if (reaction.emoji.id === apexE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(apex);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(apex);
         }
         if (reaction.emoji.id === minecraftE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(minecraft);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(minecraft);
         }
         if (reaction.emoji.id === warzoneE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(warzone);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(warzone);
         }
         if (reaction.emoji.id === etsE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(ets);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(ets);
         }
         if (reaction.emoji.id === valorantE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(valorant);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(valorant);
         }
         if (reaction.emoji.id === rainbow6E) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(rainbow6);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(rainbow6);
         }
         if (reaction.emoji.id === swbattlefront2E) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.add(swbattlefront2);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(swbattlefront2);
         }
         if (reaction.emoji.name === nsfwE) {
-            await reaction.message.id(message5).guild.members.cache.get(user.id).roles.add(nsfw);
+            await reaction.message.guild.members.cache.get(user.id).roles.add(nsfw);
         }
     } else {
         return;
@@ -184,54 +184,54 @@ const swbattlefront2E = "814072778185375754";
 
     if (reaction.message.channel.id == channel) {
         if (reaction.emoji.name === acceptEmoji) {
-            await reaction.message.id(message1).guild.members.cache.get(user.id).roles.remove(accept);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(accept);
         }
         if (reaction.emoji.id === pcEmoji) {
-            await reaction.message.id(message2).guild.members.cache.get(user.id).roles.remove(pc);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(pc);
         }
         if (reaction.emoji.id === xboxEmoji) {
-            await reaction.message.id(message2).guild.members.cache.get(user.id).roles.remove(xbox);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(xbox);
         }
         if (reaction.emoji.id === psEmoji) {
-            await reaction.message.id(message2).guild.members.cache.get(user.id).roles.remove(ps);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(ps);
         }
     }
     if (reaction.message.channel.id == channel1) {
         if (reaction.emoji.name === manEmoji) {
-            await reaction.message.id(message3).guild.members.cache.get(user.id).roles.remove(man);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(man);
         }
         if (reaction.emoji.name === womanEmoji) {
-            await reaction.message.id(message3).guild.members.cache.get(user.id).roles.remove(woman);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(woman);
         }
         if (reaction.emoji.id === gtaE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(gta);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(gta);
         }
         if (reaction.emoji.id === csE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(cs);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(cs);
         }
         if (reaction.emoji.id === apexE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(apex);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(apex);
         }
         if (reaction.emoji.id === minecraftE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(minecraft);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(minecraft);
         }
         if (reaction.emoji.id === warzoneE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(warzone);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(warzone);
         }
         if (reaction.emoji.id === etsE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(ets);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(ets);
         }
         if (reaction.emoji.id === valorantE) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(valorant);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(valorant);
         }
         if (reaction.emoji.id === rainbow6E) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(rainbow6);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(rainbow6);
         }
         if (reaction.emoji.id === swbattlefront2E) {
-            await reaction.message.id(message4).guild.members.cache.get(user.id).roles.remove(swbattlefront2);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(swbattlefront2);
         }
         if (reaction.emoji.name === nsfwE) {
-            await reaction.message.id(message5).guild.members.cache.get(user.id).roles.remove(nsfw);
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(nsfw);
         }
     } else {
         return;
