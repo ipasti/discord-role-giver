@@ -10,7 +10,7 @@ client.on("ready", () => {
     client.user.setPresence({
         game: { 
             name: "Made by PaSt AI",
-            type: "WATCHING"
+            type: "PLAYING"
         },
         status: "online"
     })
