@@ -4,7 +4,7 @@ const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION" 
  
 client.commands = new Discord.Collection();
 
-let guild = client.guilds.cache.fetch('798913368169513010');
+let guild = client.guilds.cache.get('798913368169513010');
 
 //подтверждение знание правил, а так же консоль >< 
 const channel = "798913368203198488";
