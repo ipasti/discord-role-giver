@@ -4,11 +4,11 @@ const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION" 
  
 client.commands = new Discord.Collection();
 
-let guild1 = client.guilds.cache.get('798913368169513010');
+let guild = client.guilds.find(name => name.id === '798913368169513010');
 
 //подтверждение знание правил, а так же консоль >< 
 const channel = "798913368203198488";
-const accept =  guild1.roles.cache.find(role => role.id === "798913368169513017");
+const accept =  guild.roles.cache.find(role => role.id === "798913368169513017");
 const pc =  guild.roles.cache.find(role => role.id === "798913368169513016");
 const xbox =  guild.roles.cache.find(role => role.id === "798913368169513019");
 const ps =  guild.roles.cache.find(role => role.id === "798913368177508362");
