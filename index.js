@@ -6,7 +6,7 @@ client.commands = new Discord.Collection();
 
 //подтверждение знание правил, а так же консоль >< 
 const channel = "798913368203198488";
-const accept = client.guilds.cache.get("798913368169513010").roles.cache.find(role => role.id === "798913368169513017");
+const accept = client.guilds.cache.get("798913368169513010").guild.roles.cache.find(role => role.id === "798913368169513017");
 const pc = client.guilds.cache.get("798913368169513010").guild.roles.cache.find(role => role.id === "798913368169513016");
 const xbox = client.guilds.cache.get("798913368169513010").guild.roles.cache.find(role => role.id === "798913368169513019");
 const ps = client.guilds.cache.get("798913368169513010").guild.roles.cache.find(role => role.id === "798913368177508362");
