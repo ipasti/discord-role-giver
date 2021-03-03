@@ -4,12 +4,12 @@ const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION" 
  
 client.commands = new Discord.Collection();
 
-//подтверждение знание правил, а так же консоль ><
+//подтверждение знание правил, а так же консоль >< 
 const channel = '798913368203198488';
-const accept = client.guilds.get('798913368169513010').roles.cache.find(role => role.id === "798913368169513017");
-const pc = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "798913368169513016");
-const xbox = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "798913368169513019");
-const ps = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "798913368177508362");
+const accept = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').roles.cache.find(role => role.id === "798913368169513017");
+const pc = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "798913368169513016");
+const xbox = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "798913368169513019");
+const ps = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "798913368177508362");
 
 //объявляю id сообщений
 const message1 = '814600686355742728' //подтверждение
@@ -24,18 +24,18 @@ const xboxEmoji = '814022506208952350';
 const acceptEmoji = '✅';
 //Пол/18+/Игры
 const channel1 = '813416099038756884';
-const man = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "798913368169513018");
-const woman = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "798913368177508365");
-const gta = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813769952153567262");
-const cs = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813769953806778368");
-const apex = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813769949264609321");
-const minecraft = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813769944499879986");
-const warzone = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813769941852618772");
-const ets = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813769935967748096");
-const valorant = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813769939101024327");
-const rainbow6 = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813836529189388321");
-const swbattlefront2 = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "813836528459317260");
-const nsfw = client.guilds.get('798913368169513010').guild.roles.cache.find(role => role.id === "799928306568134707");
+const man = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "798913368169513018");
+const woman = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "798913368177508365");
+const gta = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813769952153567262");
+const cs = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813769953806778368");
+const apex = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813769949264609321");
+const minecraft = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813769944499879986");
+const warzone = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813769941852618772");
+const ets = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813769935967748096");
+const valorant = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813769939101024327");
+const rainbow6 = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813836529189388321");
+const swbattlefront2 = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "813836528459317260");
+const nsfw = client.guilds.cache.find(guild => guild.id === "798913368169513010")('798913368169513010').guild.roles.cache.find(role => role.id === "799928306568134707");
  
 const nsfwE = '🔞';
 const manEmoji = '👨';
