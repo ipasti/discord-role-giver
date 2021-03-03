@@ -184,10 +184,10 @@ const swbattlefront2E = "814072778185375754";
 
     if (reaction.message.channel.id == channel) {
         if (reaction.emoji.name === acceptEmoji) {
-            await reaction.message.id(message).guild.members.cache.get(user.id).roles.remove(accept);
+            await reaction.message.id(message1).guild.members.cache.get(user.id).roles.remove(accept);
         }
         if (reaction.emoji.id === pcEmoji) {
-            await reaction.message.id(message1).guild.members.cache.get(user.id).roles.remove(pc);
+            await reaction.message.id(message2).guild.members.cache.get(user.id).roles.remove(pc);
         }
         if (reaction.emoji.id === xboxEmoji) {
             await reaction.message.id(message2).guild.members.cache.get(user.id).roles.remove(xbox);
