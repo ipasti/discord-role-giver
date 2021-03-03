@@ -7,7 +7,7 @@ client.commands = new Discord.Collection();
  
 client.on("ready", () => {
     console.log("bot is online!");
-    client.user.setPresence({
+    client.user.setActivity({
         game: { 
             name: "Made by PaSt AI",
             type: "PLAYING"
