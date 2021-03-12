@@ -23,13 +23,6 @@ const pc =  guild.roles.cache.find(role => role.id === "798913368169513016");
 const xbox =  guild.roles.cache.find(role => role.id === "798913368169513019");
 const ps =  guild.roles.cache.find(role => role.id === "798913368177508362");
 
-//объявляю id сообщений
-const message1 = "814600686355742728" //подтверждение
-const message2 = "814600717725204510" //устройство
-const message3 = "814600862117789696" //мж
-const message4 = "814600870104662076" //игры
-const message5 = "814600836414963763" //nsfw
-
 const pcEmoji = "814022506410541106";
 const psEmoji = "814022505995042826";
 const xboxEmoji = "814022506208952350";
@@ -47,6 +40,8 @@ const ets =  guild.roles.cache.find(role => role.id === "813769935967748096");
 const valorant =  guild.roles.cache.find(role => role.id === "813769939101024327");
 const rainbow6 =  guild.roles.cache.find(role => role.id === "813836529189388321");
 const swbattlefront2 =  guild.roles.cache.find(role => role.id === "813836528459317260");
+const rocketleauge = guild.roles.cache.find(role => role.id === "819898618776518667");
+const allgames = guild.roles.cache.find(role => role.id === "819898617909346365");
 const nsfw =  guild.roles.cache.find(role => role.id === "799928306568134707");
  
 const nsfwE = "🔞";
@@ -61,6 +56,9 @@ const etsE = "814072779406180352";
 const valorantE = "814068851922042941";
 const rainbow6E = "814068851448872971";
 const swbattlefront2E = "814072778185375754";
+const rocketleaugeE = "819902594931621929";
+const allgamesE = "🎮";
+
     if (reaction.message.partial) await reaction.message.fetch();
     if (reaction.partial) await reaction.fetch();
     if (user.bot) return;
@@ -114,6 +112,12 @@ const swbattlefront2E = "814072778185375754";
         if (reaction.emoji.id === swbattlefront2E) {
             await reaction.message.guild.members.cache.get(user.id).roles.add(swbattlefront2);
         }
+        if (reaction.emoji.id === rocketleaugeE) {
+            await reaction.message.guild.members.cache.get(user.id).roles.add(rocketleauge);
+        }
+        if (reaction.emoji.name === allgamesE) {
+            await reaction.message.guild.members.cache.get(user.id).roles.add(allgames);
+        }
         if (reaction.emoji.name === nsfwE) {
             await reaction.message.guild.members.cache.get(user.id).roles.add(nsfw);
         }
@@ -157,6 +161,8 @@ const ets =  guild.roles.cache.find(role => role.id === "813769935967748096");
 const valorant =  guild.roles.cache.find(role => role.id === "813769939101024327");
 const rainbow6 =  guild.roles.cache.find(role => role.id === "813836529189388321");
 const swbattlefront2 =  guild.roles.cache.find(role => role.id === "813836528459317260");
+const rocketleauge = guild.roles.cache.find(role => role.id === "819898618776518667");
+const allgames = guild.roles.cache.find(role => role.id === "819898617909346365");
 const nsfw =  guild.roles.cache.find(role => role.id === "799928306568134707");
  
 const nsfwE = "🔞";
@@ -171,6 +177,8 @@ const etsE = "814072779406180352";
 const valorantE = "814068851922042941";
 const rainbow6E = "814068851448872971";
 const swbattlefront2E = "814072778185375754";
+const rocketleaugeE = "819902594931621929";
+const allgamesE = "🎮";
 
     if (reaction.message.partial) await reaction.message.fetch();
     if (reaction.partial) await reaction.fetch();
@@ -226,12 +234,36 @@ const swbattlefront2E = "814072778185375754";
         if (reaction.emoji.id === swbattlefront2E) {
             await reaction.message.guild.members.cache.get(user.id).roles.remove(swbattlefront2);
         }
+        if (reaction.emoji.id === rocketleaugeE) {
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(rocketleauge);
+        }
+        if (reaction.emoji.name === allgamesE) {
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(allgames);
+        }
         if (reaction.emoji.name === nsfwE) {
             await reaction.message.guild.members.cache.get(user.id).roles.remove(nsfw);
         }
     } else {
         return;
     }
+});
+
+client.on('message', message => {
+ 
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
+ 
+    const args = message.content.slice(prefix.length).split(/ +/);
+    const command = args.shift().toLowerCase();
+//    if (command === 'reactionrole1') {
+//        client.commands.get('reactionrole1').execute(message, args, Discord, client);}
+//     if (command === 'reactionrole2') {
+//          client.commands.get('reactionrole2').execute(message, args, Discord, client);}
+//     if (command === 'reactionrole3') {
+//    client.commands.get('reactionrole3').execute(message, args, Discord, client);}
+    if (command === 'reactionrole4') {
+        client.commands.get('reactionrole4').execute(message, args, Discord, client);
+    } 
+  
 });
 
 client.login(process.env.BOT_TOKEN);
