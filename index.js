@@ -4,6 +4,7 @@ const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION" 
  
 client.commands = new Discord.Collection();
 
+const prefix = "/"
  
 client.on("ready", () => {
     console.log("bot is online!");
@@ -254,12 +255,12 @@ client.on('message', message => {
  
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
-//    if (command === 'reactionrole1') {
-//        client.commands.get('reactionrole1').execute(message, args, Discord, client);}
-//     if (command === 'reactionrole2') {
-//          client.commands.get('reactionrole2').execute(message, args, Discord, client);}
-//     if (command === 'reactionrole3') {
-//    client.commands.get('reactionrole3').execute(message, args, Discord, client);}
+    if (command === 'reactionrole1') {
+        client.commands.get('reactionrole1').execute(message, args, Discord, client);}
+     if (command === 'reactionrole2') {
+          client.commands.get('reactionrole2').execute(message, args, Discord, client);}
+     if (command === 'reactionrole3') {
+    client.commands.get('reactionrole3').execute(message, args, Discord, client);}
     if (command === 'reactionrole4') {
         client.commands.get('reactionrole4').execute(message, args, Discord, client);
     } 
