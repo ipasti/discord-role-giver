@@ -260,7 +260,7 @@ const allgamesE = "🎮";
     }
 });
 
-/*client.on('message', message => {
+client.on('message', message => {
  
     if (!message.content.startsWith(prefix) || message.author.bot) return;
  
@@ -279,6 +279,6 @@ const allgamesE = "🎮";
         client.commands.get('reactionrole5').execute(message, args, Discord, client);
     }
   
-});*/
+});
 
 client.login(process.env.BOT_TOKEN);
